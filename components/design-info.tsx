@@ -23,10 +23,10 @@ export default function DesignInfo({ onBack }: DesignInfoProps) {
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 p-4">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-8">
-          <Button variant="outline" onClick={onBack} 
-                className={ "border-cyan-500/50 text-cyan-300 hover:bg-cyan-500/20 hover:border-cyan-300 hover:text-cyan-200 bg-black/20"
-                }
-                >
+          <Button variant="outline" onClick={onBack}
+            className={"border-cyan-500/50 text-cyan-300 hover:bg-cyan-500/20 hover:border-cyan-300 hover:text-cyan-200 bg-black/20"
+            }
+          >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Game
           </Button>
@@ -86,7 +86,7 @@ export default function DesignInfo({ onBack }: DesignInfoProps) {
                       </p>
                     </div>
 
-<div>
+                    <div>
                       <strong className="text-cyan-300">3. Cognitive Training Research</strong>
                       <p>
                         Source: Jaeggi, S. M., et al. (2008). "Improving fluid intelligence with training on working
@@ -346,11 +346,10 @@ export default function DesignInfo({ onBack }: DesignInfoProps) {
                           {Array.from({ length: 36 }, (_, i) => (
                             <div
                               key={i}
-                              className={`aspect-square rounded ${
-                                [5, 12, 23, 30, 8, 15, 27, 33].includes(i)
+                              className={`aspect-square rounded ${[5, 12, 23, 30, 8, 15, 27, 33].includes(i)
                                   ? "bg-cyan-400 shadow-sm shadow-cyan-400/50"
                                   : "bg-gray-700 border border-cyan-500/30"
-                              }`}
+                                }`}
                             />
                           ))}
                         </div>
@@ -530,11 +529,10 @@ export default function DesignInfo({ onBack }: DesignInfoProps) {
                           {Array.from({ length: 16 }, (_, i) => (
                             <div
                               key={i}
-                              className={`w-6 h-6 rounded-lg ${
-                                [2, 7, 10, 13, 5].includes(i)
+                              className={`w-6 h-6 rounded-lg ${[2, 7, 10, 13, 5].includes(i)
                                   ? "bg-green-400 shadow-lg shadow-green-400/50"
                                   : "bg-gray-700 border-2 border-green-500/30"
-                              }`}
+                                }`}
                             />
                           ))}
                         </div>
